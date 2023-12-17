@@ -1,0 +1,23 @@
+header {
+    .logo {
+        text-align: center;
+    }
+
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+    ul {
+      display: flex;
+
+      li {
+        padding-right: 2rem;
+        list-style: none;
+        color: #5b452a;
+      }
+    }
+  }
+}
