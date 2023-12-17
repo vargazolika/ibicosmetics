@@ -1,0 +1,17 @@
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #5b452a;
+  height: 30rem;
+  
+  .carussel {
+    width: 30rem;
+
+    .review{
+      padding: 2rem;
+      height: 180px;
+    }
+  }
+}
