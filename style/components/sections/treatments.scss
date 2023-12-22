@@ -1,7 +1,31 @@
 .treatments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5b452a;
+  height: 55rem;
+
+  .treatments-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #5b452a;
-    height: 30rem;
+
+    .treatment {
+      margin: 1rem;
+      top: 3rem;
+      transition: transform 0.5s;
+
+      &:nth-child(2n) {
+        position: relative;
+        top: 4rem;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .treatment-title {
+      text-align: center;
+    }
+  }
 }
