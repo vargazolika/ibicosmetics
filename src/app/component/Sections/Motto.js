@@ -1,6 +1,6 @@
 export default function Motto(props) {
   return (
-    <div className="motto">
+    <div id="#motto" className="motto">
       <h1 className="subtitle">Bemutatkozás</h1>
       <span className="description">
         Kecskeméti orvosesztétikai központunkban profi csapatunkkal és a

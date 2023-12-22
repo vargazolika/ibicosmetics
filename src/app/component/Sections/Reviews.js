@@ -16,7 +16,7 @@ const items = [
 
 export default function Reviews(props) {
   return (
-    <div className="reviews">
+    <div id="#reviews" className="reviews">
       <Carousel
         className="carussel"
         autoPlay={false}

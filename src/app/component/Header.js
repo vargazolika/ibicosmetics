@@ -1,42 +1,46 @@
-import { Grid } from "@mui/material";
-import Image from "next/image";
+"use client";
+import { useWindowScroll } from "@uidotdev/usehooks";
+import { Link } from "react-scroll";
+
+const LINKS = [
+  { to: "#introduction", title: "Bemutatkozás" },
+  { to: "#treatments", title: "Kezelés" },
+  { to: "#socials", title: "Kapcsolat" },
+  { to: "#reviews", title: "Árlista" },
+  { to: "#motto", title: "Csapatunk" },
+];
 
 export default function Header(props) {
+  const [{ x, y }, scrollTo] = useWindowScroll();
+
   return (
-    <header>
-      <Grid container justifyContent="center">
-        <Grid item xs={4} className="logo">
-          <Image src="/logo.png" width={508} height={118} alt="Ibi kozmetika" />
-        </Grid>
-        <Grid item xs={4} alignItems="center" justifyContent="center">
-          <nav>
-            <ul>
-              <li>
-                <h3>Bemutatkozás</h3>
-              </li>
-              <li>
-                <h3>Kezelés</h3>
-              </li>
-              <li>
-                <h3>Galéria</h3>
-              </li>
-              <li>
-                <h3>Kapcsolat</h3>
-              </li>
-              <li>
-                <h3>Árlista</h3>
-              </li>
-              <li>
-                <h3>Árlista</h3>
-              </li>
-              <li>
-                <h3>Árlista</h3>
-              </li>
-            </ul>
-          </nav>
-        </Grid>
-        <Grid item xs={4} />
-      </Grid>
+    <header className={y > 0 ? "header-scrolled" : ""}>
+      <div className={y > 0 ? "logo-wrapper scrolled" : "logo-wrapper"}>
+        {/* <Image src="/logo.png" width={254} height={59} alt="Ibi kozmetika" /> */}
+        <h2 className="logo">IBI kozmetika</h2>
+        <div>
+          <h2 className="logo-scrolled">IBI kozmetika</h2>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          {LINKS.map((item, index) => (
+            <li key={index}>
+              <h3>
+                <Link
+                  className="link"
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  duration={800}
+                >
+                  {item.title}
+                </Link>
+              </h3>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

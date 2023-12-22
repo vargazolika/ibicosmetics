@@ -11,7 +11,7 @@ const TREATMENTS = [
 
 export default function Treatments(props) {
   return (
-    <div className="treatments">
+    <div id="#treatments" className="treatments">
       <div className="treatments-wrapper">
         {TREATMENTS.map((item, index) => (
           <div className="treatment" key={index}>

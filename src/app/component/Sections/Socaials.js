@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Reviews(props) {
   return (
-    <div className="socials">
+    <div id="#socials" className="socials">
       <ul>
         <li>
           <a className="facebook" href="#">
