@@ -19,7 +19,7 @@ export default function Footer(props) {
                 target="blank"
                 href="https://www.google.com/maps/place/Ibi+Kozmetika/@46.8883645,19.6551543,17z/data=!3m1!4b1!4m6!3m5!1s0x4743da7f91114acb:0xa741d6596e96152d!8m2!3d46.8883609!4d19.6577346!16s%2Fg%2F11b6ln3nz2?entry=ttu"
               >
-                Kecskemét, Madár utca 16, 6001
+                Kecskemét, Madár utca 16, 6000
               </a>
             </Grid>
           </Grid>
