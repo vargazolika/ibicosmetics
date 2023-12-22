@@ -5,16 +5,16 @@ export default function Reviews(props) {
     <div className="socials">
       <ul>
         <li>
-          <a class="facebook" href="#">
+          <a className="facebook" href="#">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i className="fa fa-facebook" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a class="twitter" href="#">
+          <a className="twitter" href="#">
             <span></span>
             <span></span>
             <span></span>
@@ -32,21 +32,21 @@ export default function Reviews(props) {
           </a>
         </li>
         <li>
-          <a class="instagram" href="#">
+          <a className="instagram" href="#">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i className="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a class="google" href="#">
+          <a className="google" href="#">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i className="fa fa-google-plus" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
