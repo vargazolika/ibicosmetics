@@ -1,7 +1,6 @@
-"use client";
-import React from "react";
-import Carousel from "react-material-ui-carousel";
-import { Paper } from "@mui/material";
+"use client"
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const items = [
   {
@@ -13,30 +12,25 @@ const items = [
     description: "Hello World!",
   },
 ];
-
 export default function Reviews(props) {
   return (
-    <div id="#reviews" className="reviews">
-      <Carousel
-        className="carussel"
-        autoPlay={false}
-        animation="slide"
-        height={200}
-        navButtonsAlwaysVisible
+    <div className="reviews">
+       <CarouselProvider
+        className='carousel'
+        naturalSlideWidth={400}
+        naturalSlideHeight={125}
+        totalSlides={6}
+        visibleSlides={3}
       >
-        {items.map((item, i) => (
-          <Review key={i} item={item} />
-        ))}
-      </Carousel>
+        <Slider>
+          <Slide index={0}>I am the first Slide.</Slide>
+          <Slide index={1}>I am the second Slide.</Slide>
+          <Slide index={2}>I am the third Slide.</Slide>
+          <Slide index={3}>I am the third Slide.</Slide>
+          <Slide index={4}>I am the third Slide.</Slide>
+          <Slide index={5}>I am the third Slide.</Slide>
+        </Slider>
+      </CarouselProvider>
     </div>
-  );
-}
-
-function Review(props) {
-  return (
-    <Paper elevation={24} className="review">
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-    </Paper>
   );
 }
