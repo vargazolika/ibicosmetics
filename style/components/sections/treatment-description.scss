@@ -1,0 +1,15 @@
+.treatment-description {
+  background-color: rgba(#5b452a, 0.4);
+
+  .treatment-header {
+    display: flex;
+    margin-left: 20rem;
+    height: 35rem;
+    padding-top: 15rem;
+
+    .description-column {
+      width: 40rem;
+      margin-left: 5rem;
+    }
+  }
+}

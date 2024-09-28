@@ -13,6 +13,7 @@
       margin: 1rem;
       top: 3rem;
       transition: transform 0.5s;
+      cursor: pointer;
 
       &:nth-child(2n) {
         position: relative;
@@ -26,6 +27,19 @@
 
     .treatment-title {
       text-align: center;
+    }
+  }
+
+  &.face-treatments {
+    height: 110rem;
+    background-color: rgba(#5b452a, 0.4);
+
+    .treatments-wrapper {
+      margin-top: 11rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      justify-items: center;
     }
   }
 }
