@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   color: #5b452a;
-  height: 55rem;
 
   .treatments-wrapper {
     display: flex;
@@ -31,15 +30,21 @@
   }
 
   &.face-treatments {
-    height: 110rem;
     background-color: rgba(#5b452a, 0.4);
 
     .treatments-wrapper {
-      margin-top: 11rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-      justify-items: center;
+      margin: 11rem 10rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .treatment {
+      margin: 4rem;
+      &:nth-child(2n) {
+        position: relative;
+        top: 0rem;
+      }
     }
   }
 }

@@ -1,15 +1,84 @@
 .treatment-description {
-  background-color: rgba(#5b452a, 0.4);
-
   .treatment-header {
     display: flex;
-    margin-left: 20rem;
+    padding-left: 30rem;
     height: 35rem;
     padding-top: 15rem;
+    background-color: rgba(#5b452a, 0.4);
 
     .description-column {
       width: 40rem;
       margin-left: 5rem;
+
+      .divider {
+        margin: 2rem 0;
+      }
+
+      .information {
+        display: flex;
+        justify-content: center;
+
+        .information-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 1rem 2rem;
+
+          h3,
+          h4 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .purpose {
+    display: flex;
+    justify-content: center;
+    .content-wrapper {
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .subtitle {
+        color: #984f58;
+        margin: 1rem 0;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+    .image-wrapper {
+      margin: 2rem;
+    }
+  }
+
+  .about {
+    .about-first {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(#5b452a, 0.4);
+      height: 20rem;
+
+      .list-wrapper {
+        margin-top: 2rem;
+        margin-left: 10rem;
+        li {
+          margin: 0.5rem 0;
+        }
+      }
+
+      .image-wrapper {
+        margin: 2rem;
+        margin-right: 10rem;
+      }
+    }
+    .about-second {
+      background-color: #984f58;
+      height: 15rem;
     }
   }
 }

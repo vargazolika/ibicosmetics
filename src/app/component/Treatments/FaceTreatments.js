@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Card from "@mui/material/Card";
 
 const TREATMENTS = [
   { img: "/facial.jpg", title: "Mezopen", link: "mezopen" },
@@ -35,8 +36,10 @@ export default function Treatments(props) {
               })
             }
           >
-            <Image src={item.img} width={250} height={250} alt={item.title} />
-            <h4 className="treatment-title">{item.title}</h4>
+            <Card>
+              <Image src={item.img} width={400} height={250} alt={item.title} />
+              <h4 className="treatment-title">{item.title}</h4>
+            </Card>
           </div>
         ))}
       </div>
