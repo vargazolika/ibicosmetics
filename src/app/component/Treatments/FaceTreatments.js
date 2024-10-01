@@ -6,9 +6,9 @@ import Card from "@mui/material/Card";
 const TREATMENTS = [
   { img: "/facial.jpg", title: "Mezopen", link: "mezopen" },
   { img: "/body.jpg", title: "VEGA Lab Tech", link: "vega" },
-  { img: "/hands.jpg", title: "Szemöldök Laminálás", link: "/face" },
-  { img: "/hair.jpg", title: "Szempilla lifting", link: "/face" },
-  { img: "/makeup.jpg", title: "Arcmasszázs", link: "/face" },
+  { img: "/hands.jpg", title: "Szemöldök Laminálás", link: "szemoldok" },
+  { img: "/hair.jpg", title: "Szempilla lifting", link: "szempilla" },
+  { img: "/makeup.jpg", title: "Arcmasszázs", link: "arcmasszas" },
   { img: "/additional.jpg", title: "Smink", link: "/face" },
   { img: "/additional.jpg", title: "3D 11 SOROS HIFU ", link: "/face" },
   { img: "/additional.jpg", title: "HydraFacial™", link: "/face" },

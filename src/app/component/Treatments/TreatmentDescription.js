@@ -1,81 +1,33 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Divider } from "@mui/material";
-
-const DESCRIPTIONS = {
-  "/arckezeles/mezopen": {
-    title: "Mezopen",
-    description:
-      "Mezopen loorem ipsum ezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsum",
-    img: "/facial.jpg",
-    time: "30 perc",
-    price: "28 000 Ft",
-    purpose: {
-      title: "Miért válaszd Mezopen kezelésünket?",
-      img: "/body.jpg",
-      informations: [
-        "Nagyon jó megoldás tág pórusokra",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-        "Nagyon jó megoldás tág pórusokra",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-      ],
-    },
-    about: {
-      title: "Kezeléssel kapcsolatos információk",
-      img: "/hands.jpg",
-      informations: [
-        "A kozmetikai kezelést 3 hetente lehet megismételni",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-      ],
-    },
-  },
-  "/arckezeles/vega": {
-    title: "VEGA Lab Tech",
-    description:
-      "VEGA Lab Tech loorem ipsum ezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsumezopen loorem ipsum",
-    img: "/facial.jpg",
-    time: "30 perc",
-    price: "28 000 Ft",
-    purpose: {
-      title: "Miért válaszd Mezopen kezelésünket?",
-      img: "/body.jpg",
-      informations: [
-        "Nagyon jó megoldás tág pórusokra",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-        "Nagyon jó megoldás tág pórusokra",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-      ],
-    },
-    about: {
-      title: "Kezeléssel kapcsolatos információk",
-      img: "/hands.jpg",
-      informations: [
-        "A kozmetikai kezelést 3 hetente lehet megismételni",
-        "Javasolt hegek kezelésére",
-        "Javasolt bőrfelszíni problémák kezelésére",
-      ],
-    },
-  },
-};
+import { FACE_TREATMENTS_CONTENT } from "./faceTreatmentsContent";
 
 export default function Home() {
   const pathname = usePathname();
   if (pathname === null) return <></>;
 
-  const { img, title, description, price, time, purpose, about } =
-    DESCRIPTIONS[pathname];
+  const {
+    img,
+    title,
+    description,
+    price,
+    time,
+    purpose,
+    about,
+    descriptionTitle,
+    titleDescription,
+    third,
+    fourth,
+  } = FACE_TREATMENTS_CONTENT[pathname];
+
   return (
     <div className="treatment-description">
       <div className="treatment-header">
         <Image src={img} width={250} height={509} alt={title} />
         <div className="description-column">
           <h1 className="subtitle">{title}</h1>
-          <span className="description">{description}</span>
+          <span className="description">{titleDescription}</span>
           <div>
             <Divider className="divider" />
 
@@ -95,8 +47,10 @@ export default function Home() {
       </div>
 
       <div className="motto">
-        <h1 className="subtitle">Bemutatkozás</h1>
-        <span className="description">{description}</span>
+        <h1 className="subtitle">{descriptionTitle}</h1>
+        {description.map((desc) => (
+          <span className="description">{desc}</span>
+        ))}
       </div>
 
       <div className="purpose">
@@ -135,6 +89,47 @@ export default function Home() {
 
         <div className="about-second"></div>
       </div>
+
+      {third && (
+        <div className="third">
+          <div className="content-wrapper">
+            <h1 className="subtitle">{third.title}</h1>
+            <div className="list">
+              <ul>
+                {third.informations.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="image-wrapper">
+            <Image src={third.img} width={250} height={509} alt={title} />
+          </div>
+        </div>
+      )}
+
+      {fourth && (
+        <div className="fourth">
+          <div className="about-first">
+            <div className="image-wrapper">
+              <Image src={fourth.img} width={250} height={509} alt={title} />
+            </div>
+            <div className="list-wrapper">
+              <h1 className="subtitle">{fourth.title}</h1>
+              <div className="list">
+                <ul>
+                  {fourth.informations.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="about-second"></div>
+        </div>
+      )}
     </div>
   );
 }
