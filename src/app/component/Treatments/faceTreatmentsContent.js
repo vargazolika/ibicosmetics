@@ -1,5 +1,6 @@
 export const FACE_TREATMENTS_CONTENT = {
   "/arckezeles/mezopen": {
+    component: "withList",
     title: "Mezopen Kollagén Plus Arckezelés",
     titleDescription: "",
     descriptionTitle: "Mi is ez a kezelés?",
@@ -34,8 +35,8 @@ export const FACE_TREATMENTS_CONTENT = {
       ],
     },
   },
-
   "/arckezeles/vega": {
+    component: "withList",
     title: "VEGA Lab Tech Mikrotűs Készülék",
     titleDescription:
       "A Bruno Vassari professzionális kozmetikai termékcsaládja, a VEGA Lab Tech, egy elektronikus mikrotűs eszköz segítségével nyújt kollagén indukciós terápiát. A VEGA készülék percenként több mint 27 000 mikrocsatornát nyit meg a bőrödben, stimulálva a kollagén termelést. Az exkluzív hatóanyagkoktélok vitaminokkal, aminosavakkal, hialuronsavval és növényi eredetű növekedési faktorokkal fiatalítják és javítják a bőr megjelenését.",
@@ -74,6 +75,7 @@ export const FACE_TREATMENTS_CONTENT = {
     },
   },
   "/arckezeles/szemoldok": {
+    component: "withList",
     title: "Szemöldök Laminálás",
     titleDescription:
       "A szemöldök laminálás egy varázslatos eljárás, amely hasonló eredményt nyújt, mint a szempilla lifting. A szemöldök szálait egyenesre fésüljük a legjobb hatóanyagokkal és fixáló zselével rögzítjük, hogy hosszú távú, akár 6-8 hétig tartó eredményt érjünk el.",
@@ -107,6 +109,7 @@ export const FACE_TREATMENTS_CONTENT = {
     },
   },
   "/arckezeles/szempilla": {
+    component: "withList",
     title: "Szempilla lifting",
     titleDescription:
       "A szempilla lifting gyönyörű, íves szempillákat varázsol, melyek szépen keretezik a szemet, kiemelik a tekintetet és megszépítik az arcot. Ez az eljárás a szempillákat nem károsítja, hanem természetes módon emeli és formázza őket.",
@@ -161,6 +164,7 @@ export const FACE_TREATMENTS_CONTENT = {
     },
   },
   "/arckezeles/arcmasszas": {
+    component: "withList",
     title: "Arcmasszázs – A fiatalos és ragyogó bőr titka",
     titleDescription:
       "Az arcmasszázs segít megőrizni a bőr feszességét és rugalmasságát, miközben lassítja és késlelteti az öregedés jeleit. Az érintés és a mechanikai súrlódás hatására pozitív élettani folyamatokat indít el, és csökkenti a fáradtság érzetét.",
@@ -208,7 +212,29 @@ export const FACE_TREATMENTS_CONTENT = {
       ],
     },
   },
+  "/arckezeles/smink": {
+    component: "withContent",
+    titleImg: "/facial.jpg",
+    title: "Smink",
+    titleDescription:
+      "Fedezd fel sminkszolgáltatásaink világát, és válassz a tökéletes megjelenésért minden alkalomra!",
+    time: "30 perc",
+    price: "28 000 Ft",
+    firstTitle: "Nappali Smink",
+    first:
+      "A nappali smink a természetes szépség kiemelésére fókuszál, visszafogott és üde hatást keltve. Az egyszerű, letisztult stílusú nappali smink célja, hogy kevesebb sminkkel friss, természetes megjelenést érjünk el, miközben eltüntetjük a kisebb bőrhibákat és kiemeljük az arc karakterét. A letisztultság, lágy vonalak és pasztell színek jellemzik ezt a sminket. Alapvető lépései közé tartozik az alapozás, szemöldök kiemelése, szem hangsúlyozása lágyabb színekkel, valamint nude rúzs vagy szájfény használata. Ezzel a sminkkel minden nap magabiztosan léphetsz ki az ajtón!",
+    firstImg: "/facial.jpg",
+    secondTitle: "Alkalmi Smink",
+    second:
+      "Az alkalmi smink a különleges események tökéletes kiegészítője, ahol erőteljesebb, gazdagabb színekkel dolgozunk. Az alkalmi sminknél tartósabb alapozást alkalmazunk, hogy egész nap megőrizze frissességét és tökéletességét. A szem vagy az ajkak hangsúlyozása az esemény és a vendég igényeihez igazodik. Kérésre soros vagy tincses műszempillát is felhelyezünk, hogy még lenyűgözőbb legyen a megjelenésed. Akár esküvőre, bálra vagy más különleges alkalomra készülsz, az alkalmi smink biztosítja, hogy a legjobb formádban tündökölj.",
+    secondImg: "/facial.jpg",
+    thirdTitle: "Menyasszonyi Smink",
+    third:
+      "A menyasszonyi smink a nagy nap különleges igényeihez igazodik, biztosítva, hogy a menyasszony ragyogó és fotogén legyen. A menyasszonyi smink alapja egy alkalmi smink, azonban a tartósság és a fotóbarát technikák különösen fontos szerepet kapnak. A sminkes vízálló termékekkel dolgozik, hogy a smink egész nap tökéletes maradjon, még az érzelmes pillanatokban is. A menyasszony igényei szerint alakítva, ez a smink biztosítja, hogy a nagy nap minden egyes fotóján gyönyörűen mutasson. Legyen szó romantikus, klasszikus vagy modern stílusról, a menyasszonyi sminkkel a legszebb önmagad leszel!",
+    thirdImg: "/facial.jpg",
+  },
   "/arckezeles/szemoldok3": {
+    component: "withContent",
     title: "",
     titleDescription: "",
     descriptionTitle: "",

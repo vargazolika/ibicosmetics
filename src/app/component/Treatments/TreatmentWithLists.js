@@ -1,12 +1,8 @@
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Divider } from "@mui/material";
 import { FACE_TREATMENTS_CONTENT } from "./faceTreatmentsContent";
 
-export default function Home() {
-  const pathname = usePathname();
-  if (pathname === null) return <></>;
-
+export default function TreatmentWithLists({ pathname }) {
   const {
     img,
     title,

@@ -33,8 +33,20 @@
     }
   }
 
+  img {
+    object-fit: cover;
+    object-position: center center;
+    border-style: solid;
+    border-width: 20px 20px 20px 20px;
+    border-color: #ffffff1a;
+    border-radius: 500px 500px 0px 0px;
+  }
+
   .purpose,
+  .first,
+  .second,
   .third {
+    padding: 1rem 15rem;
     display: flex;
     justify-content: center;
     .content-wrapper {

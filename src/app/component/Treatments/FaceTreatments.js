@@ -9,7 +9,7 @@ const TREATMENTS = [
   { img: "/hands.jpg", title: "Szemöldök Laminálás", link: "szemoldok" },
   { img: "/hair.jpg", title: "Szempilla lifting", link: "szempilla" },
   { img: "/makeup.jpg", title: "Arcmasszázs", link: "arcmasszas" },
-  { img: "/additional.jpg", title: "Smink", link: "/face" },
+  { img: "/additional.jpg", title: "Smink", link: "smink" },
   { img: "/additional.jpg", title: "3D 11 SOROS HIFU ", link: "/face" },
   { img: "/additional.jpg", title: "HydraFacial™", link: "/face" },
   { img: "/additional.jpg", title: "LPG-LIFT M6", link: "/face" },
